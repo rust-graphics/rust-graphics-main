@@ -1,0 +1,6 @@
+[package]
+name = "rust_graphics_main"
+version = "0.1.0"
+authors = ["Hossein Noroozpour <hossein.noroozpour@gmail.com>"]
+
+[dependencies]
