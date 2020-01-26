@@ -1,12 +1,9 @@
 extern crate rust_graphics_main as main;
 
-use crate::main::main;
+use crate::main::{main, Arg};
 
-main! {{
-    println!("Hello Worlds");
-    println!("Hello Worlds.");
-    println!("Hello Worlds..");
-    println!("Hello Worlds...");
-    println!("Hello Worlds....");
-    println!("Hello Worlds.....");
-}}
+fn start(_: Arg) {
+    println!("Hello World!");
+}
+
+main!(start);
