@@ -1,9 +1,13 @@
 [package]
-name = "rust_graphics_main"
+name = "rust-graphics-main"
 version = "0.1.0"
 authors = ["Hossein Noroozpour <hossein.noroozpour@gmail.com>"]
 
 [dependencies]
 
-[target.'cfg(target_os = "android")'.dependencies]
-rust_graphics_android = {version = "*", path = "../rust-graphics-android"}
+[target.'cfg(target_os = "android")'.dependencies.rust_graphics_android]
+version = "*"
+path = "../rust-graphics-android"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.wasm-bindgen]
+version = "*"
